@@ -2,7 +2,7 @@
 """
 Generates nasty problem input for 2024's Advent of Code problem 24
 
-Version 0.2
+Version 1.0
 """
 
 import argparse
