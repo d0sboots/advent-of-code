@@ -90,7 +90,7 @@ def make_problem(args):
         answer.extend(swap(rules, choices[3], 0, choices[3], 1))
     else:
         pair_chain = size == 5 or rng.randrange(2)
-        choices = rng.sample(range(1, size), k=4-pair_chain)
+        choices = sorted(rng.sample(range(1, size), k=4-pair_chain))
         pair1 = 4 if pair_chain else rng.choice([3, 4])
         pair2 = 3 if pair_chain else rng.choice([3, 4])
         answer.extend(swap(rules, choices[0], pair1, choices[2-pair_chain], pair1))
